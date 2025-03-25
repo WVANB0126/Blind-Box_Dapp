@@ -60,7 +60,7 @@
 
 5. **启动前端**
 
-   打开`fronted/index.html`文件，使用浏览器打开。
+   打开`fronted/index.html`文件，使用浏览器打开，或在fronted中npm start来启动前端。
 
 ## 使用说明
 
@@ -95,6 +95,4 @@
 ## 许可证
 
 本项目使用GPL-3.0许可证。 
-=======
-# Blind-Box_Dapp
->>>>>>> cc51eb51260d0cdf5aa6697b679391470cfa6d2e
+
