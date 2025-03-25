@@ -3661,8 +3661,7 @@
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2025-03-25T04:06:56.388Z",
-  "networkType": "ethereum",
+  "updatedAt": "2025-03-25T05:59:39.813Z",
   "devdoc": {
     "details": "Math operations with safety checks that throw on error",
     "kind": "dev",

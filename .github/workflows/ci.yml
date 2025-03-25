@@ -31,7 +31,7 @@ jobs:
       run: npm install
 
     - name: Start Ganache
-      run: npx ganache-cli -p 8545 -m "candy maple cake sugar pudding cream honey rich smooth crumble sweet treat" &
+      run: npx ganache-cli -p 7545 -m "candy maple cake sugar pudding cream honey rich smooth crumble sweet treat" &
       env:
         CI: true
 

@@ -24,7 +24,7 @@
  
 // const HDWalletProvider = require('@truffle/hdwallet-provider');
 const HDWalletProvider = require('@truffle/hdwallet-provider');
-const mnemonic = "night park deer grocery emotion misery twin trumpet chronic step idea outer"; // 从MetaMask导出12个单词
+const mnemonic = "Your Mnemonic"; // 从MetaMask导出12个单词
 module.exports = {
   /**
    * Networks define how you connect to your ethereum client and let you set the
