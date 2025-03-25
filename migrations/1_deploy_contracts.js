@@ -1,7 +1,8 @@
-var safemath = artifacts.require("safemath");
+var SafeMath = artifacts.require("SafeMath");
 var BlindBox = artifacts.require("BlindBox");
+
 module.exports = function(deployer) {
-  deployer.deploy(safemath);
-  deployer.link(safemath, BlindBox);
+  deployer.deploy(SafeMath);
+  deployer.link(SafeMath, BlindBox);
   deployer.deploy(BlindBox);
 };
