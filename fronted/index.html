@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>盲盒 DApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>欢迎体验盲盒 DApp</h1>
+        <div class="account-info">
+            <p>你的账户: <span id="account"></span></p>
+            <p>盲盒数量: <span id="boxCount">0</span></p>
+            <p>拥有的 NFT: <span id="nftList">无</span></p>
+        </div>
+        <div class="actions">
+            <button onclick="buyBox()">购买盲盒 (0.01 ETH)</button>
+            <button onclick="openBox()">开箱</button>
+            <button onclick="viewInventory()">查看个人仓库</button>
+        </div>
+        <div id="result" class="result"></div>
+        <div id="loading" class="loading" style="display: none;">加载中...</div>
+    </div>
+
+    <!-- 新增问号图标 -->
+    <div class="tooltip">
+        <span class="tooltip-icon">?</span>
+        <span class="tooltip-text">保底规则：每20次开箱必定获得传奇物品。</span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.7.4/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

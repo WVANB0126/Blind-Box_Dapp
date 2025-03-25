@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.7.0",
+    "web3": "^4.16.0"
+  },
+  "scripts": {
+    "start": "lite-server"
+  }
+}

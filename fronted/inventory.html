@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>个人仓库</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>个人仓库</h1>
+        <div class="account-info">
+            <p>你的账户: <span id="account"></span></p>
+            <p>盲盒数量: <span id="boxCount">0</span></p>
+        </div>
+        <button onclick="goBack()">返回</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.7.4/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        async function initInventory() {
+            const accounts = await web3.eth.getAccounts();
+            const account = accounts[0];
+            document.getElementById("account").innerText = account;
+            const boxCount = await contract.methods.userBoxes(account).call();
+            document.getElementById("boxCount").innerText = boxCount;
+        }
+
+        function goBack() {
+            window.location.href = "index.html";
+        }
+
+        window.onload = initInventory;
+    </script>
+</body>
+</html> 
