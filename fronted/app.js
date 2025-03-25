@@ -1,9 +1,8 @@
 const web3 = new Web3("http://127.0.0.1:7545"); // Ganache 地址
-<<<<<<< HEAD
-const contractAddress = "0x36d87Bf8C0C06D71cf00aC41fD3c9Ebe7bEa6Ed3"; // 替换为实际地址
-=======
-const contractAddress = "0x3A548FE5603FF050064dcB962b728A9aF0010609"; // 替换为实际合约地址
->>>>>>> 678fee3 (修复了保底逻辑)
+
+const contractAddress = "Your Contract Address"; // 替换为实际地址
+
+
 const abi = [
   {
     "anonymous": false,

@@ -40,7 +40,7 @@ module.exports = {
     sepolia: {
       provider: () => new HDWalletProvider({
         mnemonic: mnemonic,
-        providerOrUrl: "https://sepolia.infura.io/v3/6bf0398410974dd597117ed76924606c",
+        providerOrUrl: "Your Infura API Key",
         pollingInterval: 15000 // 增加轮询间隔
       }),      // host:"https://rpc.sepolia.org",
       network_id: 11155111, // Sepolia Chain ID
